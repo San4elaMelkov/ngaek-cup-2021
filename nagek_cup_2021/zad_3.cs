@@ -9,9 +9,9 @@ namespace nagek_cup_2021
         public static void print()
         {
             Console.WriteLine("Задание 3");
-            int i,j=0, count=0, n=100, divider=8;
+            int i,j=0, count=0, n=100000, divider=8;
             List<int> numbers = new List<int>();
-            /*for (i = 2; i <= n; i++)
+            for (i = 2; i <= n; i++)
             {
                 count = 1;
                 for (j = 2; j <= i; j+=2)
@@ -26,21 +26,7 @@ namespace nagek_cup_2021
                 
                 if (count == divider)
                     numbers.Add(i);
-            }*/
-            int div = 2;
-            while (n > 1)
-            {
-                while (n % div == 0)
-                {
-                    n = n / div;
-                    j++;
-                }
-                div++;
-
             }
-
-            
-            Console.WriteLine(j);
             Console.WriteLine($"{numbers.Count} чисел которые имеют {divider} делителей");
         }
     }

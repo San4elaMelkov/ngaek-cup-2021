@@ -8,7 +8,7 @@ namespace nagek_cup_2021
     {
         public static void print()
         {
-            Console.WriteLine("Задание 5");
+            Console.WriteLine("Задание 4");
             int summ = 0, i = 0, count = 0,f;
             while(summ < 1000000)
             {
